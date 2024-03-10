@@ -15,4 +15,4 @@ WORKDIR /mysite
 
 EXPOSE 8080
 
-CMD ["gunicorn", "-b", "0.0.0.0:8080", "mysite.wsgi:application"]
+CMD ["python3", "application/manage.py", "runserver", "0.0.0.0:8080"]
